@@ -7,6 +7,10 @@ from beaker.middleware import SessionMiddleware
 def index():
     return template('index')
 
+@route('/sign-in')
+def index():
+    return template('sign-in')
+
 ############################################################
 
 # Static
