@@ -7,14 +7,14 @@
 </head>
 <body>
     <header>
-        <h2>Osu! Blog <p>to the beat!</p></h2>
+        <h2>Osu! Blog <p class="small">to the beat!</p></h2>
     </header>
-    <div class="sign-in">
-        <a href="/sign-in.tpl">Sign In</a>
+    <div class="button">
+        <a class="sign-in" href="/sign-in.tpl">Sign In</a>
     </div>
     <div class="container">
-        <h1>Feed</h1>
-        <p>Newest posts made by circle clickers...</p>
+        <h1>Feed:</h1>
+        <p>Newest posts made by circle clickers... <br> Find out what the community is up to!</p>
     </div>
     <footer>
         <p>&copy; 2018, Victor Wahid Ívarsson</p>

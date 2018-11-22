@@ -2,13 +2,15 @@
     body {
         margin: 0;
         background-image: url("page-light.png");
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .container {
         padding: 1em;
         margin: 0.5em;
         background-color: white;
-        box-shadow: 2px 2px 5px;
+        box-shadow: 1px 1px 3px;
+        border-radius: 2px;
     }
 
     header,
@@ -26,5 +28,27 @@
     .sign-in {
         padding: 1em;
         text-decoration: none;
+        background-color: white;
+        box-shadow: 1px 1px 1px;
+        border-radius: 5px;
+        color: black;
+    }
+    .button {
+        display: flex;
+        padding: 1.5em;
+        justify-content: center;;
+    }
+    .sign-in:hover {
+        background-color: rgb(218, 218, 218);
+    }
+    .small {
+        font-size: 0.5em;
+        font-style: italic;
+    }
+    .container p {
+        background-color: rgb(255, 102, 170);
+        padding: 5px;
+        border-radius: 4px;
+        color: white; 
     }
 }
