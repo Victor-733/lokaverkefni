@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Leynisíða</title>
+    <title>Editor</title>
     <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css" />
 </head>
 <body>
-    <h2>Velkominn á leyni síðu: {{u}}</h2>
+    <h2>Welcome to the editor page: {{u}}</h2>
     <a href="/">Skrá út</a>
 </body>
 </html>

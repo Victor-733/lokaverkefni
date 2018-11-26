@@ -9,23 +9,21 @@
     <h3>Sign Up</h3><br>
     <form action="/donyskra" method="post", accept-charset="ISO-8859-1", id="ny">
         Username: <br>
-        <input type="text", name="user"> <br>
+        <input type="text", name="username"> <br>
         Password: <br>
         <input type="password", name="pass"> <br>
-        Name: <br>
-        <input type="text" name="nafn" required><br>
-        <input type="submit" value="Nýskrá">
-        <input type="reset" value="Hreinsa">
+        <input type="submit" value="Sign Up">
+        <input type="reset" value="Clear All">
     </form>
     <hr>
     <h3>Sign In</h3><br>
     <form action="/doinnskra" method="post" accept-charset="ISO-8859-1", id="inn">
         Username: <br>
-        <input type="text", name="user", required><br>
+        <input type="text", name="username", required><br>
         Password: <br>
         <input type="password", name="pass", required><br>
-        <input type="submit" value="Nýskrá">
-        <input type="reset" value="Hreinsa">
+        <input type="submit" value="Sign In">
+        <input type="reset" value="Clear All">
     </form>
     <a href="/">Til Baka</a>
 </body>

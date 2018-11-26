@@ -31,7 +31,7 @@ def nyr():
     result = cur.fetchone()
 
     if result[0] == 0:
-        cur.execute("INSERT INTO users VALUES(%s, %s)", (u, p))
+        cur.execute("INSERT INTO admins (username, pass) VALUES(%s, %s)", (u, p))
         conn.commit()
         cur.close()
         conn.close()
@@ -42,14 +42,14 @@ def nyr():
 
 @route('/doinnskra', method='POST')
 def doinn():
-    u = request.forms.get('user')
+    u = request.forms.get('username')
     p = request.forms.get('pass')
 
     # Connection
     conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='1611012220', passwd='mypassword', db='1611012220_VEFlokaverkefni')
     # cursor
     cur = conn.cursor()
-    cur.execute("SELECT count(*) FROM admins where username=%s and pass=%s",(u,p))
+    cur.execute("SELECT count(*) FROM admins where username=%s and pass=%s", (u, p))
     result = cur.fetchone()
 
     print(result)

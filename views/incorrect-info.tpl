@@ -7,6 +7,6 @@
 </head>
 <body>
     <h2>Vitlaust notandanafn eða lykilorð!</h2>
-    <a href="/">Reyna aftir</a>
+    <a href="/sign-in">Reyna aftur</a>
 </body>
 </html>
