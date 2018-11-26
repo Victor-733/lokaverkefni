@@ -14,7 +14,7 @@
     </div>
     <div class="container">
         <h1>Feed:</h1>
-        <p>Newest posts made by circle clickers... <br> Find out what the community is up to!</p>
+        <h4>Newest posts made by circle clickers... <br> Find out what the community is up to!</h4>
         <hr>
     </div>
     <footer>

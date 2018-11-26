@@ -60,6 +60,31 @@ def doinn():
     else:
         return template('incorrect-info.tpl')
 
+# ---------- NEW POST ---------- #
+
+@post("/donewpost")
+def newpost():
+    t = request.forms.get('title')
+    s = request.forms.get('story')
+    a = request.forms.get('author')
+
+    # Connection
+    conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='1611012220', passwd='mypassword', db='1611012220_VEFlokaverkefni')
+
+    #cursor
+    cur = conn.cursor()
+    cur.execute("SELECT count(*) FROM posts where title=%s", (t))
+    result = cur.fetchone()
+
+    if result[0] == 0:
+        cur.execute("INSERT INTO posts (title, story, author) VALUES(%s, %s, %s)", (t, s, a))
+        conn.commit()
+        cur.close()
+        conn.close()
+        return t, " Has been posted <br><a href='/'>Home</a>"
+
+##################################################################
+
 @route('/sign-in')
 def index():
     return template('sign-in')
