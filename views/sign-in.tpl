@@ -27,5 +27,6 @@
         <input type="submit" value="Nýskrá">
         <input type="reset" value="Hreinsa">
     </form>
+    <a href="/">Til Baka</a>
 </body>
 </html>

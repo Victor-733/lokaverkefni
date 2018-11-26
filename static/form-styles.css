@@ -1,0 +1,6 @@
+@media screen and (max-width: 50em){
+    body {
+        margin: 0;
+        background-image: url("page-light.png");
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
