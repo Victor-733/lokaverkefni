@@ -12,7 +12,9 @@
     <form action="/donewpost" method="post", accept-charset="ISO-8859-1", id="np"></form>
         <p>Title:</p>
         <input type="text" name="title"> <br> <br>
-        <textarea></textarea>
+        <textarea name="story"></textarea>
+        <p>Author:</p>
+        <input type="text" name="author"> <br> <br>
         <input type="submit" value="Submit">
     </form>
 </body>

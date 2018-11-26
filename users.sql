@@ -28,3 +28,4 @@ values
     ("Victor_733", "cheater733");
 
 select * from admins;
+select * from posts;
