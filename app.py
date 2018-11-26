@@ -60,10 +60,25 @@ def doinn():
     else:
         return template('incorrect-info.tpl')
 
-
 @route('/sign-in')
 def index():
     return template('sign-in')
+
+@route("/new-post")
+def index():
+    return template('new-post')
+
+################# MEMBERS ##########################################
+
+@route('/members')
+def member():
+    conn = pymysql.connect(host="tsuts.tskoli.is", port=3306, user='1611012220', passwd='mypassword', db='1611012220_VEFlokaverkefni')
+    c = conn.cursor()
+    c.execute("SELECT username FROM admins")
+    result = c.fetchall()
+    c.close()
+    output = template('members', rows=result)
+    return output
 
 ############################################################
 

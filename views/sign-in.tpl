@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/form-styles.css" />
 </head>
 <body>
+    <header>
+        <h2>Osu! Blog <p class="small">to the beat!</p></h2>
+    </header>
     <h3>Sign Up</h3><br>
     <form action="/donyskra" method="post", accept-charset="ISO-8859-1", id="ny">
         Username: <br>
@@ -26,5 +29,8 @@
         <input type="reset" value="Clear All">
     </form>
     <a href="/">Til Baka</a>
+    <footer>
+        <p>&copy; 2018, Victor Wahid Ívarsson</p>
+    </footer>
 </body>
 </html>
