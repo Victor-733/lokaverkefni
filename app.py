@@ -62,7 +62,7 @@ def doinn():
 
 # ---------- NEW POST ---------- #
 
-@post("/donewpost")
+@route("/donewpost", method="POST")
 def newpost():
     t = request.forms.get('title')
     s = request.forms.get('story')
@@ -73,15 +73,11 @@ def newpost():
 
     #cursor
     cur = conn.cursor()
-    cur.execute("SELECT count(*) FROM posts where title=%s", (t))
-    result = cur.fetchone()
-
-    if result[0] == 0:
-        cur.execute("INSERT INTO posts (title, story, author) VALUES(%s, %s, %s)", (t, s, a))
-        conn.commit()
-        cur.close()
-        conn.close()
-        return t, " Has been posted <br><a href='/'>Home</a>"
+    cur.execute("INSERT INTO posts (title, story, author) VALUES(%s, %s, %s)", (t, s, a))
+    conn.commit()
+    cur.close()
+    conn.close()
+    return t, " Has been posted <br><a href='/'>Home</a>"
 
 ##################################################################
 
