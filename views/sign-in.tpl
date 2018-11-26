@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Sign In</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/form-styles.css" />
 </head>
 <body>
     <h3>Sign Up</h3><br>
