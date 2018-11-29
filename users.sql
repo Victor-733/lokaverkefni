@@ -13,8 +13,8 @@ create table posts (
     id int primary key auto_increment not null,
     title varchar(70) not null,
     story text not null,
-    author varchar(50) not null,
-    foreign key (id) references admins(user_id)
+    author int not null,
+    foreign key (author) references admins(user_id)
 );
 
 ---- DROP COMMANDS ----

@@ -8,12 +8,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/edit-styles.css" />
 </head>
 <body>
-    <header>Editor</header>
+    <header>
+        <h2>Osu! Editor<p class="small">to the beat!</p></h2>
+    </header>
     <h2>Post Editor:</h2>
     <form action="/doeditpost" method="post" accept-charset="ISO-8859-1" id="ep">
         <p>Title:</p>
         <input type="text" name="title" required> <br> <br>
-        <textarea name="story" required></textarea>
+        <textarea name="story"></textarea>
         <input type="submit" value="Submit">
     </form>
     <a href="/">Home</a>

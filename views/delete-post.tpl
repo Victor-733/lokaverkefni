@@ -8,12 +8,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/edit-styles.css" />
 </head>
 <body>
-    <header>Editor</header>
+    <header>
+        <h2>Osu! Editor<p class="small">to the beat!</p></h2>
+    </header>
     <h2>Post Editor:</h2>
     <form action="/deleteapost" method="post" accept-charset="ISO-8859-1" id="dp">
         <p>Title:</p>
         <input type="text" name="title" required> <br> <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Delete">
     </form>
     <a href="/">Home</a>
     <footer>&copy; Victor Wahid Ívarsson 2018</footer>
