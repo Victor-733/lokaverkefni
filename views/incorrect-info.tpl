@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css" />
 </head>
 <body>
-    <h2>Vitlaust notandanafn eða lykilorð!</h2>
-    <a href="/sign-in">Reyna aftur</a>
+    <h2>Wrong username or password!</h2>
+    <a href="/sign-in">Try again!</a>
 </body>
 </html>
