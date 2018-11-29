@@ -1,10 +1,19 @@
-@media screen and (max-width: 50em){
-    body {
-        margin: 0;
-        background-image: url("page-light.png");
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+header,
+footer {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(rgb(255, 102, 170), rgb(139, 55, 93));
+    /*background-image: url("header_triangles.png");*/
+    color: white;
+    padding: 1em;
+}
 
+body {
+    margin: 0;
+    background-image: url("page-light.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 50em){
     .container {
         padding: 1em;
         margin: 0.5em;
@@ -13,15 +22,7 @@
         border-radius: 2px;
     }
 
-    header,
-    footer {
-        margin: 0;
-        text-align: center;
-        background-color: rgb(255, 102, 170);
-        background-image: url("header_triangles.png");
-        color: white;
-        padding: 1em;
-    }
+
     h2 {
         margin: 0;
     }
