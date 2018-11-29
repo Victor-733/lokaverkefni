@@ -9,6 +9,7 @@
     <h2>Welcome to the editor page: {{u}}</h2>
     <a href="/new-post">Make a new post!</a>
     <a href="/delete-post">Delete a post!</a>
+    <a href="/edit-post">Edit a post!</a>
     <a href="/">Skrá út</a>
 </body>
 </html>

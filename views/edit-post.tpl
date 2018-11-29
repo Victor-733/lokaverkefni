@@ -13,9 +13,7 @@
     <form action="/doeditpost" method="post", accept-charset="ISO-8859-1", id="np">
         <p>Title:</p>
         <input type="text" name="title", required> <br> <br>
-        <textarea name="story"></textarea>
-        <p>Author:</p>
-        <input type="text" name="author", required> <br> <br>
+        <textarea name="story", required></textarea>
         <input type="submit" value="Submit">
     </form>
     <a href="/">Home</a>
