@@ -16,6 +16,13 @@
         <h1>Feed:</h1>
         <h4>Newest posts made by circle clickers... <br> Find out what the community is up to!</h4>
         <hr>
+            % for row in rows:
+            <div class="news">
+                <h3>{{row[0]}}</h3>
+                <p>{{!row[1]}}</p>
+                <p class="author">{{row[2]}}</p>
+            </div>
+            % end
     </div>
     <footer>
         <p>&copy; 2018, Victor Wahid Ívarsson</p>

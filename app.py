@@ -13,7 +13,16 @@ app = SessionMiddleware(app(), session_opts)
 
 @route('/')
 def index():
-    return template('index')
+    # connection
+    conn = pymysql.connect(host="tsuts.tskoli.is", port=3306, user='1611012220', passwd='mypassword', db='1611012220_VEFlokaverkefni')
+
+    # cursor
+    c = conn.cursor()
+    c.execute("SELECT title, story, author FROM posts")
+    result = c.fetchall()
+    c.close()
+    output = template('index', rows=result)
+    return output
 
 # -------- SKRA INN --------- #
 
