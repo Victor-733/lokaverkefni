@@ -1,0 +1,15 @@
+header,
+footer {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(rgb(255, 102, 170), rgb(139, 55, 93));
+    /*background-image: url("header_triangles.png");*/
+    color: white;
+    padding: 2em;
+}
+
+body {
+    margin: 0;
+    background-image: url("page-light.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
