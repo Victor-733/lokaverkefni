@@ -10,9 +10,9 @@
 <body>
     <header>Editor</header>
     <h2>Post Editor:</h2>
-    <form action="/deleteapost" method="post", accept-charset="ISO-8859-1", id="np">
+    <form action="/deleteapost" method="post" accept-charset="ISO-8859-1" id="dp">
         <p>Title:</p>
-        <input type="text" name="title", required> <br> <br>
+        <input type="text" name="title" required> <br> <br>
         <input type="submit" value="Submit">
     </form>
     <a href="/">Home</a>

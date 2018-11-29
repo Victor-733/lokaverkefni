@@ -24,7 +24,7 @@ def index():
     output = template('index', rows=result)
     return output
 
-# -------- SKRA INN --------- #
+############## SKRA INN ############################################
 
 @route('/donyskra', method='POST')
 def nyr():
@@ -47,7 +47,8 @@ def nyr():
         return u, " hefur verið skráður <br><a href='/'>Heim</a>"
     else:
         return u, " er frátekið notendanafn, reyndu aftur <br><a href='/#ny'>Nýskrá</a>"
-# --------- INNSKRA ---------- #
+
+############## INNSKRA #############################################
 
 @route('/doinnskra', method='POST')
 def doinn():
@@ -69,7 +70,7 @@ def doinn():
     else:
         return template('incorrect-info.tpl')
 
-# ---------- NEW POST ---------- #
+######### NEW POST #################################################
 
 @route("/donewpost", method="POST")
 def newpost():
@@ -123,7 +124,7 @@ def editpost():
     conn.close()
     return t, " Has been updated <br><a href='/'>Home</a>"
 
-##################################################################
+############### ROUTE ############################################
 
 @route('/sign-in')
 def index():
@@ -153,7 +154,7 @@ def member():
     output = template('members', rows=result)
     return output
 
-############################################################
+####################################################################
 
 # Static
 @route("/static/<skra>")

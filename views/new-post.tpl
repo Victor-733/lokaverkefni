@@ -10,12 +10,12 @@
 <body>
     <header>Editor</header>
     <h2>Post Editor:</h2>
-    <form action="/donewpost" method="post", accept-charset="ISO-8859-1", id="np">
+    <form action="/donewpost" method="post" accept-charset="ISO-8859-1" id="np">
         <p>Title:</p>
-        <input type="text" name="title", required> <br> <br>
-        <textarea name="story", required></textarea>
+        <input type="text" name="title" required> <br> <br>
+        <textarea name="story" required></textarea>
         <p>Author:</p>
-        <input type="text" name="author", required> <br> <br>
+        <input type="text" name="author" required> <br> <br>
         <input type="submit" value="Submit">
     </form>
     <a href="/">Home</a>
