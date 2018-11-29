@@ -88,6 +88,42 @@ def newpost():
     conn.close()
     return t, " Has been posted <br><a href='/'>Home</a>"
 
+############### DELETE POST ######################################
+
+@route("/deleteapost", method="POST")
+def newpost():
+    t = request.forms.get('title')
+
+    # Connection
+    conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='1611012220', passwd='mypassword', db='1611012220_VEFlokaverkefni')
+
+    #cursor
+    cur = conn.cursor()
+    cur.execute("DELETE FROM posts WHERE title=%s", (t))
+    conn.commit()
+    cur.close()
+    conn.close()
+    return t, " Has been deleted <br><a href='/'>Home</a>"
+
+################ EDIT POST #######################################
+
+@route("/doeditpost", method="POST")
+def newpost():
+    t = request.forms.get('title')
+    s = request.forms.get('story')
+    a = request.forms.get('author')
+
+    # Connection
+    conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='1611012220', passwd='mypassword', db='1611012220_VEFlokaverkefni')
+
+    #cursor
+    cur = conn.cursor()
+    cur.execute("INSERT INTO posts (title, story, author) VALUES(%s, %s, %s)", (t, s, a))
+    conn.commit()
+    cur.close()
+    conn.close()
+    return t, " Has been posted <br><a href='/'>Home</a>"
+
 ##################################################################
 
 @route('/sign-in')
@@ -97,6 +133,14 @@ def index():
 @route("/new-post")
 def index():
     return template('new-post')
+
+@route("/delete-post")
+def index():
+    return template('delete-post')
+
+@route("/edit-post")
+def index():
+    return template('edit-post')
 
 ################# MEMBERS ##########################################
 
