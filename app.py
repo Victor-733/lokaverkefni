@@ -2,7 +2,6 @@ import pymysql
 from bottle import *
 from sys import argv
 from beaker.middleware import SessionMiddleware
-TEMPLATE_PATH.insert(0, 'C:/Users/Victor_733/Documents/School/VSH/Önn 3/lokaverkefni/views')
 
 session_opts = {
     "session.type": "file",
@@ -19,7 +18,7 @@ def index():
 
     # cursor
     c = conn.cursor()
-    c.execute("SELECT title, story, username FROM posts JOIN admins ON posts.author = admins.user_id")
+    c.execute("SELECT title, story, username FROM posts JOIN admins ON posts.author = admins.user_id ORDER BY id DESC")
     result = c.fetchall()
     c.close()
     output = template('index', rows=result)
@@ -160,7 +159,7 @@ def member():
 # Static
 @route("/static/<skra>")
 def static_skrar(skra):
-    return static_file(skra, root="C:/Users/Victor_733/Documents/School/VSH/Önn 3/lokaverkefni/static")
+    return static_file(skra, root="./static/")
 
 # run
 try:

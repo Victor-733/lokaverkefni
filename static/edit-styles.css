@@ -7,11 +7,40 @@ footer {
     color: white;
     padding: 1em;
 }
-
+header {
+    margin-bottom: 1em;
+}
+footer {
+    margin-top: 1em;
+}
 body {
     margin: 0;
     background-image: url("page-light.png");
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    background-color: rgb(255, 102, 170);
+    border-radius: 7px;
+    margin: 1em;
+}
+.small {
+    font-size: 0.5em;
+    font-style: italic;
+}
+.container {
+    margin: auto;
+    max-width: 55em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 7px;
+}
+.button:hover {
+    background-color: rgb(168, 65, 111);
 }
 @media screen and (max-width: 50em){
     .button {
@@ -33,5 +62,8 @@ body {
         padding: 1em;
         background-color: white;
         border-radius: 7px;
+    }
+    .button:hover {
+        background-color: rgb(168, 65, 111);
     }
 }

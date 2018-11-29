@@ -29,8 +29,8 @@
             <input type="submit" value="Sign In">
             <input type="reset" value="Clear All">
         </form>
+        <a href="/" class="button">Back</a>
     </div>
-    <a href="/" class="button">Back</a>
     <footer>
         <p>&copy; 2018, Victor Wahid Ívarsson</p>
     </footer>

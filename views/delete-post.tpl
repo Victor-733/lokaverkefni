@@ -11,13 +11,15 @@
     <header>
         <h2>Osu! Editor<p class="small">to the beat!</p></h2>
     </header>
-    <h2>Post Editor:</h2>
-    <form action="/deleteapost" method="post" accept-charset="ISO-8859-1" id="dp">
-        <p>Title:</p>
-        <input type="text" name="title" required> <br> <br>
-        <input type="submit" value="Delete">
-    </form>
-    <a href="/">Home</a>
+    <div class="container">
+        <h2>Post Editor:</h2>
+        <form action="/deleteapost" method="post" accept-charset="ISO-8859-1" id="dp">
+            <p>Title:</p>
+            <input type="text" name="title" required> <br> <br>
+            <input type="submit" value="Delete">
+        </form>
+        <a href="/" class="button">Home</a>
+    </div>
     <footer>&copy; Victor Wahid Ívarsson 2018</footer>
 </body>
 </html>
