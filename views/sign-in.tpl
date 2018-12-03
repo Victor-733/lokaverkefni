@@ -16,8 +16,10 @@
             <input type="text", name="username"> <br>
             Password: <br>
             <input type="password", name="pass"> <br>
-            <input type="submit" value="Sign Up">
-            <input type="reset" value="Clear All">
+            <div class="row">
+                <input type="submit" value="Sign Up" class="button">
+                <input type="reset" value="Clear All" class="button">
+            </div>
         </form>
         <hr>
         <h3>Sign In</h3><br>
@@ -26,10 +28,12 @@
             <input type="text", name="username", required><br>
             Password: <br>
             <input type="password", name="pass", required><br>
-            <input type="submit" value="Sign In">
-            <input type="reset" value="Clear All">
+            <div class="row">
+                <input type="submit" value="Sign In" class="button">
+                <input type="reset" value="Clear All" class="button">
+            </div>
         </form>
-        <a href="/" class="button">Back</a>
+        <a href="/" class="button back">Back</a>
     </div>
     <footer>
         <p>&copy; 2018, Victor Wahid Ívarsson</p>

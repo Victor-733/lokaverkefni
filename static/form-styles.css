@@ -26,7 +26,6 @@ body {
 }
 .button {
     display: flex;
-    width: 3.5em;
     text-decoration: none;
     color: black;
     padding: 1em;
@@ -36,6 +35,14 @@ body {
 }
 .button:hover {
     background-color: rgb(179, 71, 119);
+}
+.row {
+    display: flex;
+    flex-flow: row;
+}
+.back {
+    display: flex;
+    justify-content: center;
 }
 @media screen and (max-width: 50em){
     .small {
@@ -51,7 +58,6 @@ body {
     }
     .button {
         display: flex;
-        width: 3.5em;
         text-decoration: none;
         color: black;
         padding: 1em;
@@ -61,4 +67,8 @@ body {
     }
     .button:hover {
         background-color: rgb(179, 71, 119);
+    }
+    .row {
+        display: flex;
+        flex-flow: row;
     }

@@ -12,6 +12,7 @@ header {
 }
 footer {
     margin-top: 1em;
+    padding: 2em;
 }
 
 body {
@@ -48,6 +49,7 @@ body {
 }
 .button-out:hover {
     background-color: rgb(70, 5, 8);
+    color: white;
 }
 .container {
     margin: auto;
