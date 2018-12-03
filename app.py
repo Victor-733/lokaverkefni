@@ -44,9 +44,9 @@ def nyr():
         conn.commit()
         cur.close()
         conn.close()
-        return u, " hefur verið skráður <br><a href='/'>Heim</a>"
+        return u, " has been made <br><a href='/'>Home</a>"
     else:
-        return u, " er frátekið notendanafn, reyndu aftur <br><a href='/#ny'>Nýskrá</a>"
+        return u, " is already in use, pick another name <br><a href='/#ny'>Try again</a>"
 
 ############## INNSKRA #############################################
 
