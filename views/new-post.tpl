@@ -18,7 +18,7 @@
             <input type="text" name="title" required> <br> <br>
             <textarea name="story"></textarea>
             <label>Author username/account name:</label>
-            <input type="text" name="author"> <br> <br>
+            <input type="text" name="author" required> <br> <br>
             <input type="submit" value="Submit" class="button">
         </form>
         <a href="/" class="button">Home</a>
