@@ -7,6 +7,12 @@ footer {
     color: white;
     padding: 1em;
 }
+header {
+    margin-bottom: 1em;
+}
+footer {
+    margin-top: 1em;
+}
 
 body {
     margin: 0;

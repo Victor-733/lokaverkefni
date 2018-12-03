@@ -16,7 +16,7 @@
         <form action="/deleteapost" method="post" accept-charset="ISO-8859-1" id="dp">
             <p>Title:</p>
             <input type="text" name="title" required> <br> <br>
-            <input type="submit" value="Delete">
+            <input type="submit" value="Delete" class="button">
         </form>
         <a href="/" class="button">Home</a>
     </div>

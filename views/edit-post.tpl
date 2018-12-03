@@ -17,7 +17,7 @@
             <p>Title:</p>
             <input type="text" name="title" required> <br> <br>
             <textarea name="story"></textarea>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="button">
         </form>
         <a href="/" class="button">Home</a>
     </div>
